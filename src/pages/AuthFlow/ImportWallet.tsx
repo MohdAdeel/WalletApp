@@ -10,6 +10,7 @@ import {
 } from 'react-native';
 import { Wallet } from 'ethers';
 import React, { useState } from 'react';
+import { Colors } from '../../constants/color';
 import { useAuth } from '../../Contexts/AuthContext';
 import LinearGradient from 'react-native-linear-gradient';
 import GradientButton from '../../components/GradientButton';
@@ -57,7 +58,7 @@ const ImportWallet = ({ navigation }: Props) => {
 
   return (
     <LinearGradient
-      colors={['#03080f', '#050b15', '#080b16']}
+      colors={[Colors.backgroundDeep, Colors.backgroundBase, Colors.backgroundBase]}
       style={styles.screen}
     >
       <SafeAreaView style={styles.safeArea}>
@@ -74,7 +75,7 @@ const ImportWallet = ({ navigation }: Props) => {
                 <MaterialCommunityIcons
                   name="wallet-outline"
                   size={36}
-                  color="#53F2FF"
+                  color={Colors.accentCyanBright}
                 />
               </View>
               <Text style={styles.brandTitle}>
@@ -89,7 +90,7 @@ const ImportWallet = ({ navigation }: Props) => {
                 <MaterialCommunityIcons
                   name="wallet-plus"
                   size={32}
-                  color="#63FFFF"
+                  color={Colors.accentCyan}
                   style={styles.headerIcon}
                 />
                 <Text style={styles.cardTitle}>Import Wallet</Text>
@@ -103,7 +104,7 @@ const ImportWallet = ({ navigation }: Props) => {
                 <TextInput
                   style={[styles.input, error ? styles.inputError : null]}
                   placeholder="word word word ..."
-                  placeholderTextColor="#7A8BA8"
+                  placeholderTextColor={Colors.textMuted}
                   multiline
                   numberOfLines={5}
                   textAlignVertical="top"
@@ -122,7 +123,7 @@ const ImportWallet = ({ navigation }: Props) => {
                   <MaterialCommunityIcons
                     name="information"
                     size={18}
-                    color="#63FFFF"
+                    color={Colors.accentCyan}
                   />
                   <Text style={styles.infoText}>
                     Enter your 12 or 24 word recovery phrase with spaces between
@@ -174,33 +175,33 @@ const styles = StyleSheet.create({
     height: 80,
     borderRadius: 24,
     borderWidth: 1,
-    borderColor: 'rgba(255,255,255,0.25)',
+    borderColor: Colors.borderSoft,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: 'rgba(7, 8, 12, 0.5)',
+    backgroundColor: Colors.glassMid,
     marginBottom: 12,
   },
   brandTitle: {
     fontSize: 32,
     letterSpacing: 2,
     fontWeight: '700',
-    color: '#E8F6FF',
+    color: Colors.textPrimary,
   },
   brandAccent: {
-    color: '#63FFFF',
+    color: Colors.accentCyan,
   },
   brandTag: {
     fontSize: 12,
     letterSpacing: 4,
     marginTop: 4,
-    color: '#7A8BA8',
+    color: Colors.textMuted,
   },
   card: {
     width: '100%',
-    backgroundColor: 'rgba(17, 18, 28, 0.85)',
+    backgroundColor: Colors.glassDark,
     borderRadius: 30,
     padding: 24,
-    shadowColor: '#000',
+    shadowColor: Colors.backgroundDeep,
     shadowOffset: { width: 0, height: 20 },
     shadowOpacity: 0.4,
     shadowRadius: 30,
@@ -215,12 +216,12 @@ const styles = StyleSheet.create({
   },
   cardTitle: {
     fontSize: 24,
-    color: '#FFFFFF',
+    color: Colors.textPrimary,
     fontWeight: '700',
     marginTop: 4,
   },
   cardSubtitle: {
-    color: '#8A98AF',
+    color: Colors.textMuted,
     marginTop: 8,
     letterSpacing: 0.6,
     textAlign: 'center',
@@ -230,38 +231,38 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   label: {
-    color: '#93A6C1',
+    color: Colors.textSecondary,
     fontSize: 14,
     fontWeight: '600',
     marginBottom: 10,
     letterSpacing: 1,
   },
   input: {
-    backgroundColor: 'rgba(32, 36, 52, 0.85)',
+    backgroundColor: Colors.inputBackground,
     borderRadius: 16,
     padding: 16,
-    color: '#FFFFFF',
+    color: Colors.textPrimary,
     fontSize: 15,
     minHeight: 130,
     borderWidth: 1,
-    borderColor: 'rgba(255,255,255,0.08)',
+    borderColor: Colors.borderMuted,
     letterSpacing: 0.5,
     lineHeight: 22,
   },
   infoBox: {
     flexDirection: 'row',
     alignItems: 'flex-start',
-    backgroundColor: 'rgba(99, 255, 255, 0.08)',
+    backgroundColor: Colors.glowCyanSoft,
     borderRadius: 12,
     padding: 14,
     marginTop: 14,
     borderWidth: 1,
-    borderColor: 'rgba(99, 255, 255, 0.15)',
+    borderColor: Colors.glowCyanMid,
     gap: 10,
   },
   infoText: {
     flex: 1,
-    color: '#93A6C1',
+    color: Colors.textSecondary,
     fontSize: 13,
     lineHeight: 19,
     letterSpacing: 0.3,
@@ -273,10 +274,10 @@ const styles = StyleSheet.create({
     opacity: 0.5,
   },
   inputError: {
-    borderColor: 'rgba(248, 113, 113, 0.6)',
+    borderColor: Colors.statusError,
   },
   errorText: {
-    color: '#f87171',
+    color: Colors.statusError,
     fontSize: 13,
     marginTop: 8,
   },

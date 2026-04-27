@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Colors } from '../../constants/color';
 import { useAuth } from '../../Contexts/AuthContext';
 import LinearGradient from 'react-native-linear-gradient';
 import { View, Text, StyleSheet, SafeAreaView } from 'react-native';
@@ -27,7 +28,12 @@ const GettingStarted = ({ navigation }: Props) => {
 
   return (
     <LinearGradient
-      colors={['#02040b', '#060c18', '#090f1d', '#070910']}
+      colors={[
+        Colors.backgroundDeep,
+        Colors.backgroundBase,
+        Colors.backgroundBase,
+        Colors.backgroundDeep,
+      ]}
       start={{ x: 0, y: 0 }}
       end={{ x: 1, y: 1 }}
       style={styles.screen}
@@ -41,7 +47,7 @@ const GettingStarted = ({ navigation }: Props) => {
             <MaterialCommunityIcons
               name="wallet-outline"
               size={56}
-              color="#63FFFF"
+              color={Colors.accentCyan}
             />
           </View>
 
@@ -81,7 +87,7 @@ const styles = StyleSheet.create({
     width: 340,
     height: 340,
     borderRadius: 170,
-    backgroundColor: 'rgba(99, 255, 255, 0.12)',
+    backgroundColor: Colors.glowCyanSoft,
   },
   bottomGlow: {
     position: 'absolute',
@@ -89,7 +95,7 @@ const styles = StyleSheet.create({
     width: 360,
     height: 360,
     borderRadius: 180,
-    backgroundColor: 'rgba(153, 69, 255, 0.16)',
+    backgroundColor: Colors.glowPurpleSoft,
   },
   content: {
     alignItems: 'center',
@@ -100,11 +106,11 @@ const styles = StyleSheet.create({
     height: 124,
     borderRadius: 32,
     borderWidth: 1.5,
-    borderColor: 'rgba(99, 255, 255, 0.35)',
+    borderColor: Colors.glowCyanMid,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: 'rgba(10, 13, 25, 0.75)',
-    shadowColor: '#53F2FF',
+    backgroundColor: Colors.glassDark,
+    shadowColor: Colors.accentCyanBright,
     shadowOffset: { width: 0, height: 12 },
     shadowOpacity: 0.45,
     shadowRadius: 24,
@@ -112,16 +118,16 @@ const styles = StyleSheet.create({
     marginBottom: 24,
   },
   brandTitle: {
-    color: '#F2FBFF',
+    color: Colors.textPrimary,
     fontSize: 38,
     fontWeight: '800',
     letterSpacing: 2.8,
   },
   brandAccent: {
-    color: '#63FFFF',
+    color: Colors.accentCyan,
   },
   brandTag: {
-    color: '#8FA3C2',
+    color: Colors.textSecondary,
     marginTop: 8,
     marginBottom: 18,
     letterSpacing: 3.8,
@@ -129,7 +135,7 @@ const styles = StyleSheet.create({
     fontWeight: '600',
   },
   subtitle: {
-    color: '#B1C2DD',
+    color: Colors.textSecondary,
     textAlign: 'center',
     fontSize: 15,
     lineHeight: 22,
@@ -140,7 +146,7 @@ const styles = StyleSheet.create({
     width: 210,
     height: 8,
     borderRadius: 999,
-    backgroundColor: 'rgba(255, 255, 255, 0.12)',
+    backgroundColor: Colors.borderMuted,
     overflow: 'hidden',
     marginBottom: 12,
   },
@@ -148,10 +154,10 @@ const styles = StyleSheet.create({
     width: '62%',
     height: '100%',
     borderRadius: 999,
-    backgroundColor: '#63FFFF',
+    backgroundColor: Colors.accentCyan,
   },
   loadingText: {
-    color: '#8DA0BE',
+    color: Colors.textSecondary,
     fontSize: 13,
     letterSpacing: 1.1,
   },

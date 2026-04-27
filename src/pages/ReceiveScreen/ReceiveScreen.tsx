@@ -55,7 +55,7 @@ const ReceiveScreen = () => {
       await Share.share({
         message: `Send assets to my wallet address:\n${walletPublicKey}`,
       });
-    } catch (error) {
+    } catch {
       Alert.alert('Unable to share', 'Please try again in a moment.');
     }
   };
@@ -234,9 +234,9 @@ const styles = StyleSheet.create({
     width: 44,
     height: 44,
     borderRadius: 22,
-    backgroundColor: '#06060A',
+    backgroundColor: Colors.backgroundDeep,
     borderWidth: 1,
-    borderColor: '#1b1b24',
+    borderColor: Colors.surfaceBase,
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -255,10 +255,10 @@ const styles = StyleSheet.create({
     lineHeight: 19,
   },
   assetCard: {
-    backgroundColor: '#0B0B13',
+    backgroundColor: Colors.backgroundBase,
     borderRadius: 30,
     borderWidth: 1,
-    borderColor: '#1f1f26',
+    borderColor: Colors.surfaceElevated,
     padding: 22,
     marginTop: 12,
     alignSelf: 'center',
@@ -299,8 +299,8 @@ const styles = StyleSheet.create({
   statusPill: {
     borderRadius: 12,
     borderWidth: 1,
-    borderColor: '#1F334A',
-    backgroundColor: '#0E1825',
+    borderColor: Colors.borderSubtle,
+    backgroundColor: Colors.surfaceAccent,
     paddingHorizontal: 10,
     paddingVertical: 5,
   },
@@ -326,7 +326,7 @@ const styles = StyleSheet.create({
     width: 220,
     height: 220,
     borderRadius: 34,
-    backgroundColor: '#03030A',
+    backgroundColor: Colors.backgroundDeep,
     justifyContent: 'center',
     alignItems: 'center',
     position: 'relative',
@@ -342,8 +342,8 @@ const styles = StyleSheet.create({
     borderRadius: 28,
     padding: 14,
     borderWidth: 1,
-    borderColor: 'rgba(255,255,255,0.08)',
-    backgroundColor: '#05050F',
+    borderColor: Colors.borderMuted,
+    backgroundColor: Colors.backgroundDeep,
     justifyContent: 'center',
   },
   qrRow: {
@@ -360,7 +360,7 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.whiteText,
   },
   qrCellInactive: {
-    backgroundColor: '#05050B',
+    backgroundColor: Colors.backgroundDeep,
   },
   qrMeta: {
     color: Colors.lightGreyText,
@@ -372,9 +372,9 @@ const styles = StyleSheet.create({
     position: 'absolute',
     bottom: 14,
     right: 18,
-    backgroundColor: '#03030A',
+    backgroundColor: Colors.backgroundDeep,
     borderWidth: 1,
-    borderColor: 'rgba(255,255,255,0.2)',
+    borderColor: Colors.borderSoft,
     borderRadius: 12,
     paddingHorizontal: 10,
     paddingVertical: 4,
@@ -392,10 +392,10 @@ const styles = StyleSheet.create({
     fontSize: 12,
   },
   addressCard: {
-    backgroundColor: '#0B0B14',
+    backgroundColor: Colors.backgroundBase,
     borderRadius: 30,
     borderWidth: 1,
-    borderColor: '#1b1b25',
+    borderColor: Colors.surfaceBase,
     padding: 20,
     marginTop: 24,
   },
@@ -447,8 +447,8 @@ const styles = StyleSheet.create({
     marginTop: 16,
     borderRadius: 16,
     borderWidth: 1,
-    borderColor: '#1D2A3C',
-    backgroundColor: '#0A121D',
+    borderColor: Colors.borderSubtle,
+    backgroundColor: Colors.backgroundAlt,
     padding: 14,
     flexDirection: 'row',
     alignItems: 'center',
@@ -473,9 +473,9 @@ const styles = StyleSheet.create({
     width: 62,
     height: 62,
     borderRadius: 31,
-    backgroundColor: '#06060A',
+    backgroundColor: Colors.backgroundDeep,
     borderWidth: 1,
-    borderColor: '#1e1e27',
+    borderColor: Colors.surfaceElevated,
     alignItems: 'center',
     justifyContent: 'center',
     marginBottom: 6,

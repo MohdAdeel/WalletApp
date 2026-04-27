@@ -94,7 +94,7 @@ const BuyAssetsScreen = () => {
         </View>
 
         <LinearGradient
-          colors={['#18243A', '#101D35', '#131A29']}
+          colors={[Colors.surfaceAccent, Colors.surfaceAccent, Colors.surfaceAccent]}
           start={{ x: 0, y: 0 }}
           end={{ x: 1, y: 1 }}
           style={styles.heroCard}
@@ -263,9 +263,9 @@ const styles = StyleSheet.create({
     borderRadius: 21,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#080A10',
+    backgroundColor: Colors.backgroundDeep,
     borderWidth: 1,
-    borderColor: '#1B2230',
+    borderColor: Colors.surfaceElevated,
   },
   iconButtonPlaceholder: {
     width: 42,
@@ -282,28 +282,28 @@ const styles = StyleSheet.create({
   heroCard: {
     borderRadius: 22,
     borderWidth: 1,
-    borderColor: '#25344C',
+    borderColor: Colors.borderSubtle,
     padding: 18,
     minHeight: 132,
     justifyContent: 'center',
     marginBottom: 20,
   },
   heroLabel: {
-    color: '#8BC1FF',
+    color: Colors.accentPrimary,
     fontSize: 11,
     letterSpacing: 1.2,
     fontWeight: '700',
     marginBottom: 8,
   },
   heroTitle: {
-    color: '#F3F8FF',
+    color: Colors.textPrimary,
     fontSize: 24,
     fontWeight: '700',
     lineHeight: 30,
     marginBottom: 6,
   },
   heroSubtitle: {
-    color: '#D5E2F5',
+    color: Colors.textPrimary,
     fontSize: 14,
     lineHeight: 21,
     maxWidth: '95%',
@@ -324,16 +324,16 @@ const styles = StyleSheet.create({
   },
   assetOption: {
     width: '48%',
-    backgroundColor: '#0E121D',
+    backgroundColor: Colors.backgroundAlt,
     borderWidth: 1,
-    borderColor: '#1C2638',
+    borderColor: Colors.surfaceAccent,
     borderRadius: 16,
     paddingVertical: 12,
     paddingHorizontal: 10,
   },
   assetOptionSelected: {
     borderColor: Colors.accentBlue,
-    backgroundColor: '#111C2D',
+    backgroundColor: Colors.surfaceAccent,
   },
   assetIcon: {
     color: Colors.whiteText,
@@ -355,8 +355,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderRadius: 16,
     borderWidth: 1,
-    borderColor: '#243048',
-    backgroundColor: '#0A0F19',
+    borderColor: Colors.borderSubtle,
+    backgroundColor: Colors.backgroundBase,
     paddingHorizontal: 14,
     minHeight: 58,
   },
@@ -378,15 +378,15 @@ const styles = StyleSheet.create({
   },
   quickAmount: {
     borderWidth: 1,
-    borderColor: '#263553',
-    backgroundColor: '#0D1524',
+    borderColor: Colors.borderSubtle,
+    backgroundColor: Colors.backgroundAlt,
     borderRadius: 20,
     paddingHorizontal: 12,
     paddingVertical: 7,
   },
   quickAmountSelected: {
     borderColor: Colors.accentBlue,
-    backgroundColor: '#143058',
+    backgroundColor: Colors.borderSubtle,
   },
   quickAmountText: {
     color: Colors.accentBlue,
@@ -406,8 +406,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderRadius: 18,
     borderWidth: 1,
-    borderColor: '#22304A',
-    backgroundColor: '#0C1220',
+    borderColor: Colors.borderSubtle,
+    backgroundColor: Colors.backgroundAlt,
     paddingHorizontal: 14,
     paddingVertical: 8,
   },
@@ -420,7 +420,7 @@ const styles = StyleSheet.create({
   },
   paymentChipSelected: {
     borderColor: Colors.accentBlue,
-    backgroundColor: '#10203A',
+    backgroundColor: Colors.surfaceAccent,
   },
   paymentChipText: {
     color: Colors.lightGreyText,
@@ -433,8 +433,8 @@ const styles = StyleSheet.create({
   summaryCard: {
     borderRadius: 18,
     borderWidth: 1,
-    borderColor: '#1F2A40',
-    backgroundColor: '#0B101A',
+    borderColor: Colors.borderSubtle,
+    backgroundColor: Colors.backgroundBase,
     padding: 16,
     marginBottom: 20,
   },
@@ -460,7 +460,7 @@ const styles = StyleSheet.create({
   },
   summaryTotalRow: {
     borderTopWidth: 1,
-    borderTopColor: '#22314B',
+    borderTopColor: Colors.borderSubtle,
     paddingTop: 10,
     marginTop: 3,
     marginBottom: 0,

@@ -9,6 +9,7 @@ import {
   ActivityIndicator,
 } from 'react-native';
 import { Wallet } from 'ethers';
+import { Colors } from '../../constants/color';
 import { useAuth } from '../../Contexts/AuthContext';
 import React, { useState, useCallback } from 'react';
 import Clipboard from '@react-native-clipboard/clipboard';
@@ -101,7 +102,7 @@ const CreateWallet = ({ navigation }: Props) => {
     return (
       <SafeAreaView style={styles.safeArea}>
         <View style={styles.center}>
-          <ActivityIndicator size="large" color="#53F2FF" />
+          <ActivityIndicator size="large" color={Colors.accentCyanBright} />
           <Text style={styles.loadingText}>Generating wallet...</Text>
         </View>
       </SafeAreaView>
@@ -132,7 +133,7 @@ const CreateWallet = ({ navigation }: Props) => {
             <MaterialCommunityIcons
               name="wallet-outline"
               size={32}
-              color="#53F2FF"
+              color={Colors.accentCyanBright}
             />
           </View>
           <Text style={styles.brandTitle}>
@@ -159,7 +160,7 @@ const CreateWallet = ({ navigation }: Props) => {
               <MaterialCommunityIcons
                 name="content-copy"
                 size={18}
-                color="#63FFFF"
+                color={Colors.accentCyan}
               />
             </TouchableOpacity>
           </View>
@@ -176,7 +177,7 @@ const CreateWallet = ({ navigation }: Props) => {
               <MaterialCommunityIcons
                 name="content-copy"
                 size={18}
-                color="#63FFFF"
+                color={Colors.accentCyan}
               />
             </TouchableOpacity>
           </View>
@@ -193,7 +194,7 @@ const CreateWallet = ({ navigation }: Props) => {
               <MaterialCommunityIcons
                 name="content-copy"
                 size={18}
-                color="#63FFFF"
+                color={Colors.accentCyan}
               />
             </TouchableOpacity>
           </View>
@@ -219,11 +220,11 @@ const CreateWallet = ({ navigation }: Props) => {
 const styles = StyleSheet.create({
   safeArea: {
     flex: 1,
-    backgroundColor: '#020408',
+    backgroundColor: Colors.backgroundDeep,
   },
   container: {
     flex: 1,
-    backgroundColor: '#020408',
+    backgroundColor: Colors.backgroundDeep,
   },
   content: {
     padding: 24,
@@ -239,52 +240,52 @@ const styles = StyleSheet.create({
     height: 72,
     borderRadius: 22,
     borderWidth: 1,
-    borderColor: 'rgba(255,255,255,0.2)',
+    borderColor: Colors.borderSoft,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: 'rgba(7, 8, 12, 0.6)',
+    backgroundColor: Colors.glassMid,
     marginBottom: 10,
   },
   brandTitle: {
     fontSize: 28,
     letterSpacing: 2,
     fontWeight: '700',
-    color: '#E8F6FF',
+    color: Colors.textPrimary,
   },
   brandAccent: {
-    color: '#63FFFF',
+    color: Colors.accentCyan,
   },
   brandTag: {
     fontSize: 11,
     letterSpacing: 3,
     marginTop: 4,
-    color: '#7A8BA8',
+    color: Colors.textMuted,
   },
   header: {
     alignItems: 'center',
   },
   title: {
-    color: '#fff',
+    color: Colors.textPrimary,
     fontSize: 26,
     fontWeight: '700',
     letterSpacing: 0.6,
   },
   subtitle: {
-    color: '#9ca5c4',
+    color: Colors.textSecondary,
     marginTop: 8,
     fontSize: 16,
     marginBottom: 24,
     textAlign: 'center',
   },
   card: {
-    backgroundColor: 'rgba(17, 24, 42, 0.9)',
+    backgroundColor: Colors.glassDark,
     borderRadius: 20,
     padding: 18,
     borderWidth: 1,
-    borderColor: 'rgba(255,255,255,0.08)',
+    borderColor: Colors.borderMuted,
   },
   label: {
-    color: '#87a1ff',
+    color: Colors.accentPrimary,
     fontSize: 14,
     marginBottom: 4,
   },
@@ -298,12 +299,12 @@ const styles = StyleSheet.create({
     marginBottom: 4,
   },
   value: {
-    color: '#fff',
+    color: Colors.textPrimary,
     fontSize: 16,
     fontWeight: '600',
   },
   notice: {
-    color: '#7d8aa7',
+    color: Colors.textMuted,
     fontSize: 14,
     lineHeight: 20,
   },
@@ -318,11 +319,11 @@ const styles = StyleSheet.create({
     gap: 16,
   },
   loadingText: {
-    color: '#9ca5c4',
+    color: Colors.textSecondary,
     fontSize: 16,
   },
   errorText: {
-    color: '#f87171',
+    color: Colors.statusError,
     fontSize: 16,
     textAlign: 'center',
   },

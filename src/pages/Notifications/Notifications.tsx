@@ -28,7 +28,7 @@ const dummyNotifications: NotificationItem[] = [
     description: 'Your ETH to USDC swap has been completed successfully.',
     time: '2 min ago',
     icon: 'swap-horizontal',
-    iconBg: '#1E3A66',
+    iconBg: Colors.borderSubtle,
   },
   {
     id: '2',
@@ -36,7 +36,7 @@ const dummyNotifications: NotificationItem[] = [
     description: 'New login detected from an Android device.',
     time: '1 hr ago',
     icon: 'shield-check-outline',
-    iconBg: '#244E3B',
+    iconBg: Colors.borderSubtle,
   },
   {
     id: '3',
@@ -44,7 +44,7 @@ const dummyNotifications: NotificationItem[] = [
     description: 'BTC moved +3.4% in the last 24 hours.',
     time: '3 hr ago',
     icon: 'trending-up',
-    iconBg: '#4A2F13',
+    iconBg: Colors.surfaceElevated,
   },
   {
     id: '4',
@@ -52,7 +52,7 @@ const dummyNotifications: NotificationItem[] = [
     description: 'Secure your wallet by backing up recovery phrase.',
     time: 'Yesterday',
     icon: 'bell-ring-outline',
-    iconBg: '#3D2A5F',
+    iconBg: Colors.borderSubtle,
   },
 ];
 
@@ -141,7 +141,7 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#0E0E12',
+    backgroundColor: Colors.backgroundBase,
   },
   iconButtonPlaceholder: {
     width: 40,
@@ -159,9 +159,9 @@ const styles = StyleSheet.create({
     fontWeight: '700',
   },
   heroCard: {
-    backgroundColor: '#101C2B',
+    backgroundColor: Colors.surfaceAccent,
     borderWidth: 1,
-    borderColor: '#2A4368',
+    borderColor: Colors.borderSubtle,
     borderRadius: 20,
     padding: 16,
     marginBottom: 16,
@@ -179,9 +179,9 @@ const styles = StyleSheet.create({
   },
   notificationCard: {
     flexDirection: 'row',
-    backgroundColor: '#121822',
+    backgroundColor: Colors.surfaceBase,
     borderWidth: 1,
-    borderColor: '#233349',
+    borderColor: Colors.borderSubtle,
     borderRadius: 18,
     padding: 14,
     marginBottom: 12,

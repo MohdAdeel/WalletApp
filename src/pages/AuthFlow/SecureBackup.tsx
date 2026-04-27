@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Colors } from '../../constants/color';
 import { AuthStackParamList } from '../../navigation/AuthStack';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
@@ -86,18 +87,18 @@ const SecureBackup = ({ navigation }: Props) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#01020b',
+    backgroundColor: Colors.backgroundDeep,
     padding: 24,
     justifyContent: 'flex-end',
   },
   title: {
-    color: '#fff',
+    color: Colors.textPrimary,
     fontSize: 28,
     fontWeight: '700',
     marginBottom: 12,
   },
   subtitle: {
-    color: '#8a94b0',
+    color: Colors.textMuted,
     fontSize: 16,
     marginBottom: 24,
   },
@@ -113,38 +114,38 @@ const styles = StyleSheet.create({
     width: 10,
     height: 10,
     borderRadius: 5,
-    backgroundColor: '#00ffb3',
+    backgroundColor: Colors.statusSuccess,
     marginRight: 12,
   },
   checkText: {
-    color: '#fff',
+    color: Colors.textPrimary,
     fontSize: 16,
   },
   buttonSecondary: {
     paddingVertical: 16,
     borderRadius: 14,
     borderWidth: 1,
-    borderColor: '#3a4362',
+    borderColor: Colors.borderSubtle,
     alignItems: 'center',
     marginBottom: 12,
   },
   secondaryText: {
-    color: '#8a94b0',
+    color: Colors.textMuted,
     fontSize: 16,
   },
   buttonPrimary: {
-    backgroundColor: '#0f6bff',
+    backgroundColor: Colors.accentPrimary,
     paddingVertical: 18,
     borderRadius: 16,
     alignItems: 'center',
-    shadowColor: '#0f6bff',
+    shadowColor: Colors.accentPrimary,
     shadowOffset: { width: 0, height: 10 },
     shadowOpacity: 0.4,
     shadowRadius: 20,
     elevation: 12,
   },
   buttonText: {
-    color: '#fefefe',
+    color: Colors.textPrimary,
     fontSize: 16,
     fontWeight: '700',
   },

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Colors } from '../../constants/color';
 import { StyleSheet, Text, View } from 'react-native';
 
 const SwapScreen = () => {
@@ -15,7 +16,7 @@ const SwapScreen = () => {
 const styles = StyleSheet.create({
   container: {
     padding: 16,
-    backgroundColor: '#f4f3ff',
+    backgroundColor: Colors.textPrimary,
     borderRadius: 12,
     marginBottom: 12,
   },
@@ -25,7 +26,7 @@ const styles = StyleSheet.create({
   },
   subheading: {
     marginTop: 4,
-    color: '#3d2c94',
+    color: Colors.accentPurple,
   },
 });
 

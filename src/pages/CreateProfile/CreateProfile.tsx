@@ -74,7 +74,7 @@ const CreateProfileScreen = () => {
               value={fullName}
               onChangeText={setFullName}
               placeholder="Enter your full name"
-              placeholderTextColor="#7D8798"
+              placeholderTextColor={Colors.textMuted}
               style={styles.input}
             />
 
@@ -83,7 +83,7 @@ const CreateProfileScreen = () => {
               value={email}
               onChangeText={setEmail}
               placeholder="Enter your email"
-              placeholderTextColor="#7D8798"
+              placeholderTextColor={Colors.textMuted}
               keyboardType="email-address"
               autoCapitalize="none"
               style={styles.input}
@@ -94,7 +94,7 @@ const CreateProfileScreen = () => {
               value={phone}
               onChangeText={setPhone}
               placeholder="Enter your phone number"
-              placeholderTextColor="#7D8798"
+              placeholderTextColor={Colors.textMuted}
               keyboardType="phone-pad"
               style={styles.input}
             />
@@ -104,7 +104,7 @@ const CreateProfileScreen = () => {
               value={country}
               onChangeText={setCountry}
               placeholder="Enter your country"
-              placeholderTextColor="#7D8798"
+              placeholderTextColor={Colors.textMuted}
               style={styles.input}
             />
 
@@ -113,7 +113,7 @@ const CreateProfileScreen = () => {
               value={bio}
               onChangeText={setBio}
               placeholder="Tell us a little about yourself"
-              placeholderTextColor="#7D8798"
+              placeholderTextColor={Colors.textMuted}
               multiline
               textAlignVertical="top"
               style={[styles.input, styles.bioInput]}
@@ -157,7 +157,7 @@ const styles = StyleSheet.create({
     width: 40,
     height: 40,
     borderRadius: 20,
-    backgroundColor: '#0E0E12',
+    backgroundColor: Colors.backgroundBase,
     justifyContent: 'center',
     alignItems: 'center',
   },
@@ -180,8 +180,8 @@ const styles = StyleSheet.create({
   heroCard: {
     borderRadius: 18,
     borderWidth: 1,
-    borderColor: '#2A4368',
-    backgroundColor: '#101C2B',
+    borderColor: Colors.borderSubtle,
+    backgroundColor: Colors.surfaceAccent,
     padding: 16,
     marginBottom: 16,
   },
@@ -198,9 +198,9 @@ const styles = StyleSheet.create({
   },
   formCard: {
     borderRadius: 18,
-    backgroundColor: '#111823',
+    backgroundColor: Colors.surfaceBase,
     borderWidth: 1,
-    borderColor: '#233349',
+    borderColor: Colors.borderSubtle,
     padding: 16,
   },
   label: {
@@ -211,10 +211,10 @@ const styles = StyleSheet.create({
     marginTop: 8,
   },
   input: {
-    backgroundColor: '#1B2534',
+    backgroundColor: Colors.surfaceAccent,
     borderRadius: 12,
     borderWidth: 1,
-    borderColor: '#2D3D53',
+    borderColor: Colors.borderSubtle,
     color: Colors.whiteText,
     paddingHorizontal: 14,
     paddingVertical: 12,
@@ -226,9 +226,9 @@ const styles = StyleSheet.create({
   footer: {
     paddingHorizontal: 20,
     paddingVertical: 14,
-    backgroundColor: '#0B0D13',
+    backgroundColor: Colors.backgroundBase,
     borderTopWidth: 1,
-    borderTopColor: '#1C283A',
+    borderTopColor: Colors.surfaceAccent,
   },
   saveButton: {
     backgroundColor: Colors.accentBlue,

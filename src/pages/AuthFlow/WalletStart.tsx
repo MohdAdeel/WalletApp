@@ -6,6 +6,7 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import React from 'react';
+import { Colors } from '../../constants/color';
 import LinearGradient from 'react-native-linear-gradient';
 import { AuthStackParamList } from '../../navigation/AuthStack';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
@@ -16,7 +17,7 @@ type Props = NativeStackScreenProps<AuthStackParamList, 'WalletStart'>;
 const WalletStart = ({ navigation }: Props) => {
   return (
     <LinearGradient
-      colors={['#03080f', '#050b15', '#080b16']}
+      colors={[Colors.backgroundDeep, Colors.backgroundBase, Colors.backgroundBase]}
       style={styles.screen}
     >
       <SafeAreaView style={styles.container}>
@@ -26,7 +27,7 @@ const WalletStart = ({ navigation }: Props) => {
               <MaterialCommunityIcons
                 name="wallet-outline"
                 size={64}
-                color="#53F2FF"
+                color={Colors.accentCyanBright}
               />
             </View>
             <Text style={styles.brandTitle}>
@@ -48,7 +49,10 @@ const WalletStart = ({ navigation }: Props) => {
               activeOpacity={0.8}
             >
               <LinearGradient
-                colors={['rgba(0, 212, 255, 0.15)', 'rgba(153, 69, 255, 0.15)']}
+                colors={[
+                  Colors.glowCyanSoft,
+                  Colors.glowPurpleSoft,
+                ]}
                 start={{ x: 0, y: 0 }}
                 end={{ x: 1, y: 1 }}
                 style={styles.cardGradient}
@@ -58,7 +62,7 @@ const WalletStart = ({ navigation }: Props) => {
                     <MaterialCommunityIcons
                       name="wallet-plus"
                       size={32}
-                      color="#63FFFF"
+                      color={Colors.accentCyan}
                     />
                   </View>
                   <View style={styles.cardText}>
@@ -70,7 +74,7 @@ const WalletStart = ({ navigation }: Props) => {
                   <MaterialCommunityIcons
                     name="chevron-right"
                     size={24}
-                    color="#63FFFF"
+                    color={Colors.accentCyan}
                   />
                 </View>
               </LinearGradient>
@@ -82,7 +86,10 @@ const WalletStart = ({ navigation }: Props) => {
               activeOpacity={0.8}
             >
               <LinearGradient
-                colors={['rgba(153, 69, 255, 0.15)', 'rgba(0, 212, 255, 0.15)']}
+                colors={[
+                  Colors.glowPurpleSoft,
+                  Colors.glowCyanSoft,
+                ]}
                 start={{ x: 0, y: 0 }}
                 end={{ x: 1, y: 1 }}
                 style={styles.cardGradient}
@@ -92,7 +99,7 @@ const WalletStart = ({ navigation }: Props) => {
                     <MaterialCommunityIcons
                       name="cloud-download"
                       size={32}
-                      color="#D5A7FF"
+                      color={Colors.accentLavender}
                     />
                   </View>
                   <View style={styles.cardText}>
@@ -104,7 +111,7 @@ const WalletStart = ({ navigation }: Props) => {
                   <MaterialCommunityIcons
                     name="chevron-right"
                     size={24}
-                    color="#D5A7FF"
+                    color={Colors.accentLavender}
                   />
                 </View>
               </LinearGradient>
@@ -138,12 +145,12 @@ const styles = StyleSheet.create({
     height: 120,
     borderRadius: 32,
     borderWidth: 2,
-    borderColor: 'rgba(99, 255, 255, 0.3)',
+    borderColor: Colors.glowCyanMid,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: 'rgba(7, 8, 12, 0.5)',
+    backgroundColor: Colors.glassMid,
     marginBottom: 24,
-    shadowColor: '#63FFFF',
+    shadowColor: Colors.accentCyan,
     shadowOffset: { width: 0, height: 12 },
     shadowOpacity: 0.4,
     shadowRadius: 24,
@@ -153,20 +160,20 @@ const styles = StyleSheet.create({
     fontSize: 36,
     letterSpacing: 2.5,
     fontWeight: '800',
-    color: '#E8F6FF',
+    color: Colors.textPrimary,
     marginBottom: 6,
   },
   brandAccent: {
-    color: '#63FFFF',
+    color: Colors.accentCyan,
   },
   brandTag: {
     fontSize: 12,
     letterSpacing: 4,
-    color: '#7A8BA8',
+    color: Colors.textMuted,
     marginBottom: 16,
   },
   subtitle: {
-    color: '#93A6C1',
+    color: Colors.textSecondary,
     textAlign: 'center',
     fontSize: 15,
     lineHeight: 22,
@@ -179,7 +186,7 @@ const styles = StyleSheet.create({
   ctaTitle: {
     fontSize: 18,
     fontWeight: '700',
-    color: '#FFFFFF',
+    color: Colors.textPrimary,
     marginBottom: 20,
     letterSpacing: 1,
   },
@@ -187,7 +194,7 @@ const styles = StyleSheet.create({
     marginBottom: 16,
     borderRadius: 20,
     overflow: 'hidden',
-    shadowColor: '#63FFFF',
+    shadowColor: Colors.accentCyan,
     shadowOffset: { width: 0, height: 8 },
     shadowOpacity: 0.2,
     shadowRadius: 16,
@@ -196,19 +203,19 @@ const styles = StyleSheet.create({
   cardGradient: {
     borderRadius: 20,
     borderWidth: 1,
-    borderColor: 'rgba(255, 255, 255, 0.1)',
+    borderColor: Colors.borderMuted,
   },
   cardContent: {
     flexDirection: 'row',
     alignItems: 'center',
     padding: 20,
-    backgroundColor: 'rgba(17, 18, 28, 0.6)',
+    backgroundColor: Colors.glassMid,
   },
   iconContainer: {
     width: 56,
     height: 56,
     borderRadius: 16,
-    backgroundColor: 'rgba(99, 255, 255, 0.1)',
+    backgroundColor: Colors.glowCyanSoft,
     alignItems: 'center',
     justifyContent: 'center',
     marginRight: 16,
@@ -219,13 +226,13 @@ const styles = StyleSheet.create({
   cardTitle: {
     fontSize: 18,
     fontWeight: '700',
-    color: '#FFFFFF',
+    color: Colors.textPrimary,
     marginBottom: 4,
     letterSpacing: 0.5,
   },
   cardSubtitle: {
     fontSize: 13,
-    color: '#93A6C1',
+    color: Colors.textSecondary,
     letterSpacing: 0.3,
   },
 });

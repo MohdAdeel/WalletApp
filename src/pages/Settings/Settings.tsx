@@ -24,22 +24,22 @@ const themes = [
     id: 'cyber',
     name: 'Cyber',
     subtitle: 'Neon aqua border',
-    swatch: '#00D4FF',
-    cardColor: '#0F1E23',
+    swatch: Colors.accentPrimary,
+    cardColor: Colors.surfaceAccent,
   },
   {
     id: 'neon',
     name: 'Neon',
     subtitle: 'Colorful dusk glow',
-    swatch: '#AA00FF',
-    cardColor: '#221429',
+    swatch: Colors.accentPurple,
+    cardColor: Colors.surfaceBase,
   },
   {
     id: 'dark',
     name: 'Dark',
     subtitle: 'Midnight matte',
-    swatch: '#0B0B10',
-    cardColor: '#141419',
+    swatch: Colors.backgroundBase,
+    cardColor: Colors.backgroundAlt,
   },
 ];
 
@@ -95,14 +95,14 @@ const SettingsScreen = () => {
   };
 
   return (
-    <SafeAreaView style={[styles.safeArea, { backgroundColor: '#0B0D13' }]}>
+    <SafeAreaView style={[styles.safeArea, { backgroundColor: Colors.backgroundBase }]}>
       <StatusBar
         barStyle="light-content"
         backgroundColor={Colors.darkBackground}
       />
       <ScrollView
         contentContainerStyle={styles.contentContainer}
-        style={[styles.scrollContainer, { backgroundColor: '#0B0D13' }]}
+        style={[styles.scrollContainer, { backgroundColor: Colors.backgroundBase }]}
       >
         <View style={styles.headerBar}>
           <Pressable
@@ -178,8 +178,8 @@ const SettingsScreen = () => {
             <Switch
               value={biometricEnabled}
               onValueChange={setBiometricEnabled}
-              trackColor={{ false: '#3A3A3E', true: selectedTheme.swatch }}
-              thumbColor={biometricEnabled ? '#0E0E12' : '#FFFFFF'}
+              trackColor={{ false: Colors.borderSubtle, true: selectedTheme.swatch }}
+              thumbColor={biometricEnabled ? Colors.backgroundBase : Colors.textPrimary}
             />
           </View>
           <View style={styles.settingItem}>
@@ -190,8 +190,8 @@ const SettingsScreen = () => {
             <Switch
               value={twoFactorEnabled}
               onValueChange={setTwoFactorEnabled}
-              trackColor={{ false: '#3A3A3E', true: selectedTheme.swatch }}
-              thumbColor={twoFactorEnabled ? '#0E0E12' : '#FFFFFF'}
+              trackColor={{ false: Colors.borderSubtle, true: selectedTheme.swatch }}
+              thumbColor={twoFactorEnabled ? Colors.backgroundBase : Colors.textPrimary}
             />
           </View>
           <TouchableOpacity style={styles.settingItem}>
@@ -277,7 +277,7 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#0E0E12',
+    backgroundColor: Colors.backgroundBase,
   },
   iconText: {
     color: Colors.whiteText,
@@ -297,7 +297,7 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.cardBackground,
     borderRadius: 24,
     borderWidth: 1,
-    borderColor: '#2A3647',
+    borderColor: Colors.borderSubtle,
     padding: 20,
     alignItems: 'center',
     marginBottom: 10,
@@ -324,7 +324,7 @@ const styles = StyleSheet.create({
     height: 106,
     borderRadius: 53,
     borderWidth: 2,
-    borderColor: 'rgba(0, 194, 255, 0.3)',
+    borderColor: Colors.glowCyanMid,
   },
   profileName: {
     color: Colors.whiteText,
@@ -365,10 +365,10 @@ const styles = StyleSheet.create({
     paddingVertical: 4,
     paddingHorizontal: 10,
     borderRadius: 999,
-    backgroundColor: '#222229',
+    backgroundColor: Colors.surfaceElevated,
   },
   purpleBadge: {
-    backgroundColor: '#3C0057',
+    backgroundColor: Colors.accentPurple,
   },
   badgeText: {
     color: Colors.whiteText,
@@ -387,7 +387,7 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   settingItem: {
-    backgroundColor: '#1F1F25',
+    backgroundColor: Colors.surfaceElevated,
     borderRadius: 18,
     paddingHorizontal: 16,
     paddingVertical: 15,
@@ -412,7 +412,7 @@ const styles = StyleSheet.create({
   themeCard: {
     flex: 1,
     borderRadius: 18,
-    backgroundColor: '#0F0F14',
+    backgroundColor: Colors.backgroundBase,
     padding: 16,
     marginRight: 12,
   },
@@ -442,7 +442,7 @@ const styles = StyleSheet.create({
     fontSize: 12,
   },
   supportCard: {
-    backgroundColor: '#1F1F25',
+    backgroundColor: Colors.surfaceElevated,
     borderRadius: 20,
     paddingVertical: 18,
     paddingHorizontal: 16,
@@ -483,7 +483,7 @@ const styles = StyleSheet.create({
     width: 46,
     height: 46,
     borderRadius: 23,
-    backgroundColor: '#14141A',
+    backgroundColor: Colors.backgroundAlt,
     marginBottom: 6,
   },
   navLabel: {

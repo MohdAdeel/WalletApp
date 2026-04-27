@@ -95,7 +95,7 @@ const TransactionHistoryScreen = () => {
               : '--:--',
           type,
           icon: type === 'sent' ? '↗' : '↙',
-          bgColor: type === 'sent' ? '#7A122D' : '#0F4F35',
+          bgColor: type === 'sent' ? Colors.statusError : Colors.statusSuccess,
           timestampMs,
         } satisfies UiTransaction;
       })
@@ -229,7 +229,7 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#06060A',
+    backgroundColor: Colors.backgroundDeep,
   },
   hitSlop: { top: 10, bottom: 10, left: 10, right: 10 },
   iconText: {
@@ -246,7 +246,7 @@ const styles = StyleSheet.create({
   searchBar: {
     height: 48,
     borderRadius: 16,
-    backgroundColor: '#1F1F25',
+    backgroundColor: Colors.surfaceElevated,
     justifyContent: 'center',
     paddingHorizontal: 16,
     marginBottom: 20,
@@ -255,10 +255,10 @@ const styles = StyleSheet.create({
     color: Colors.lightGreyText,
   },
   emptyStateCard: {
-    backgroundColor: '#0F0F14',
+    backgroundColor: Colors.backgroundBase,
     borderRadius: 18,
     borderWidth: 1,
-    borderColor: '#1F1F25',
+    borderColor: Colors.surfaceElevated,
     paddingVertical: 28,
     paddingHorizontal: 20,
     alignItems: 'center',
@@ -292,7 +292,7 @@ const styles = StyleSheet.create({
   transactionCard: {
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: '#0F0F14',
+    backgroundColor: Colors.backgroundBase,
     borderRadius: 18,
     padding: 16,
     marginBottom: 12,
@@ -353,7 +353,7 @@ const styles = StyleSheet.create({
     width: 46,
     height: 46,
     borderRadius: 23,
-    backgroundColor: '#14141A',
+    backgroundColor: Colors.backgroundAlt,
     marginBottom: 6,
   },
   navLabel: {
