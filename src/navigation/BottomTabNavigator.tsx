@@ -1,7 +1,7 @@
 import {
-  Modal,
   View,
   Text,
+  Modal,
   Platform,
   Pressable,
   StyleSheet,

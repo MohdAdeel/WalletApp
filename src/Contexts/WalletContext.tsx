@@ -1,9 +1,9 @@
-import React, { createContext, useContext, useMemo } from 'react';
-import { useAuth } from './AuthContext';
 import {
-  useGetWalletDetails,
   type WalletDetails,
+  useGetWalletDetails,
 } from '../hooks/useGetWalletDetails';
+import { useAuth } from './AuthContext';
+import React, { createContext, useContext, useMemo } from 'react';
 
 type WalletContextValue = {
   walletDetails: WalletDetails | null;
@@ -45,4 +45,3 @@ export const useWallet = () => {
   }
   return context;
 };
-

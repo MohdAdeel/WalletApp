@@ -1,7 +1,7 @@
 import React from 'react';
+import { Colors } from '../constants/color';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-import { Colors } from '../constants/color';
 
 type CompleteProfileCardProps = {
   onPress: () => void;

@@ -1,8 +1,8 @@
+import React from 'react';
 import AuthStack from './AuthStack';
 import MainStack from './MainStack';
-import React from 'react';
-import GettingStarted from '../pages/AuthFlow/GettingStarted';
 import { useAuth } from '../Contexts/AuthContext';
+import GettingStarted from '../pages/AuthFlow/GettingStarted';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 

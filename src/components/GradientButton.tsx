@@ -1,4 +1,3 @@
-import React from 'react';
 import {
   Text,
   ViewStyle,
@@ -7,6 +6,7 @@ import {
   StyleSheet,
   TouchableOpacity,
 } from 'react-native';
+import React from 'react';
 import { Colors } from '../constants/color';
 import Feather from 'react-native-vector-icons/Feather';
 import LinearGradient from 'react-native-linear-gradient';
