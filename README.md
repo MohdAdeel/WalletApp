@@ -4,14 +4,25 @@ WalletApp is a modern React Native Web3 wallet UI focused on a clean portfolio e
 
 ## 📸 Preview
 
-<img width="451" height="946" alt="Screenshot 2026-04-27 at 3 41 50 PM" src="https://github.com/user-attachments/assets/46f1812c-f923-46fa-a143-72b746280aeb" />
-<img width="451" height="946" alt="Screenshot 2026-04-27 at 3 42 12 PM" src="https://github.com/user-attachments/assets/4ab09955-d422-49c0-88ff-30bd0b93e89c" />
-<img width="451" height="946" alt="Screenshot 2026-04-27 at 3 42 18 PM" src="https://github.com/user-attachments/assets/694f7699-d268-4d8b-885e-cdb11ba3c6db" />
-<img width="451" height="946" alt="Screenshot 2026-04-27 at 3 42 50 PM" src="https://github.com/user-attachments/assets/d01469c1-cb54-4cc7-a0b7-b5f610c8c764" />
-<img width="451" height="946" alt="Screenshot 2026-04-27 at 3 43 01 PM" src="https://github.com/user-attachments/assets/c30f7dea-516a-475a-9b31-8a7c3a18f6bd" />
-<img width="451" height="946" alt="Screenshot 2026-04-27 at 3 43 11 PM" src="https://github.com/user-attachments/assets/e66d8c08-70a8-4819-ba01-85f8107b63cf" />
-<img width="451" height="946" alt="Screenshot 2026-04-27 at 3 43 25 PM" src="https://github.com/user-attachments/assets/0489e914-6e2b-4e91-a0a3-7af7feca7924" />
-<img width="451" height="946" alt="Screenshot 2026-04-27 at 3 43 48 PM" src="https://github.com/user-attachments/assets/cbe1628f-b5fb-466c-acfc-7900a50277b0" />
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/46f1812c-f923-46fa-a143-72b746280aeb" width="45%" />
+  <img src="https://github.com/user-attachments/assets/4ab09955-d422-49c0-88ff-30bd0b93e89c" width="45%" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/694f7699-d268-4d8b-885e-cdb11ba3c6db" width="45%" />
+  <img src="https://github.com/user-attachments/assets/d01469c1-cb54-4cc7-a0b7-b5f610c8c764" width="45%" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/c30f7dea-516a-475a-9b31-8a7c3a18f6bd" width="45%" />
+  <img src="https://github.com/user-attachments/assets/e66d8c08-70a8-4819-ba01-85f8107b63cf" width="45%" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/0489e914-6e2b-4e91-a0a3-7af7feca7924" width="45%" />
+  <img src="https://github.com/user-attachments/assets/cbe1628f-b5fb-466c-acfc-7900a50277b0" width="45%" />
+</p>
 
 ## ✨ Features
 
