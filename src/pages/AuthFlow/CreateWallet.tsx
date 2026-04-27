@@ -130,7 +130,7 @@ const CreateWallet = ({ navigation }: Props) => {
         <View style={styles.logoSection}>
           <View style={styles.logoCircle}>
             <MaterialCommunityIcons
-              name="shield-check"
+              name="wallet-outline"
               size={32}
               color="#53F2FF"
             />

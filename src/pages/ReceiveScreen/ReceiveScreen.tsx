@@ -1,4 +1,3 @@
-import React from 'react';
 import {
   Alert,
   Share,
@@ -10,6 +9,7 @@ import {
   SafeAreaView,
   ScrollView,
 } from 'react-native';
+import React from 'react';
 import { Colors } from '../../constants/color';
 import { useAuth } from '../../Contexts/AuthContext';
 import { useNavigation } from '@react-navigation/native';

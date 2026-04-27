@@ -1,19 +1,19 @@
-import React, { useMemo, useState } from 'react';
 import {
-  Alert,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
   Text,
-  TextInput,
-  Pressable,
-  SafeAreaView,
   View,
+  Alert,
+  StatusBar,
+  Pressable,
+  TextInput,
+  ScrollView,
+  StyleSheet,
+  SafeAreaView,
 } from 'react-native';
+import { Colors } from '../../constants/color';
+import React, { useMemo, useState } from 'react';
 import { useNavigation } from '@react-navigation/native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import LinearGradient from 'react-native-linear-gradient';
-import { Colors } from '../../constants/color';
 
 type BuyAssetOption = {
   symbol: string;

@@ -1,16 +1,16 @@
-import React from 'react';
 import {
-  Pressable,
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
   Text,
   View,
+  StatusBar,
+  Pressable,
+  StyleSheet,
+  ScrollView,
+  SafeAreaView,
 } from 'react-native';
+import React from 'react';
+import { Colors } from '../../constants/color';
 import { useNavigation } from '@react-navigation/native';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-import { Colors } from '../../constants/color';
 
 type NotificationItem = {
   id: string;
@@ -61,14 +61,20 @@ const NotificationsScreen = () => {
 
   return (
     <SafeAreaView style={styles.safeArea}>
-      <StatusBar barStyle="light-content" backgroundColor={Colors.darkBackground} />
+      <StatusBar
+        barStyle="light-content"
+        backgroundColor={Colors.darkBackground}
+      />
       <ScrollView
         style={styles.scrollContainer}
         contentContainerStyle={styles.contentContainer}
         showsVerticalScrollIndicator={false}
       >
         <View style={styles.headerBar}>
-          <Pressable style={styles.iconButton} onPress={() => navigation.goBack()}>
+          <Pressable
+            style={styles.iconButton}
+            onPress={() => navigation.goBack()}
+          >
             <Text style={styles.iconText}>{'\u2190'}</Text>
           </Pressable>
           <Text style={styles.headerTitle}>Notifications</Text>
@@ -85,7 +91,12 @@ const NotificationsScreen = () => {
 
         {dummyNotifications.map(item => (
           <View key={item.id} style={styles.notificationCard}>
-            <View style={[styles.notificationIconWrap, { backgroundColor: item.iconBg }]}>
+            <View
+              style={[
+                styles.notificationIconWrap,
+                { backgroundColor: item.iconBg },
+              ]}
+            >
               <MaterialCommunityIcons
                 name={item.icon}
                 size={18}
@@ -94,7 +105,9 @@ const NotificationsScreen = () => {
             </View>
             <View style={styles.notificationContent}>
               <Text style={styles.notificationTitle}>{item.title}</Text>
-              <Text style={styles.notificationDescription}>{item.description}</Text>
+              <Text style={styles.notificationDescription}>
+                {item.description}
+              </Text>
               <Text style={styles.notificationTime}>{item.time}</Text>
             </View>
           </View>

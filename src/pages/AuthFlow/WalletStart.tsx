@@ -1,4 +1,3 @@
-import React from 'react';
 import {
   View,
   Text,
@@ -6,6 +5,7 @@ import {
   SafeAreaView,
   TouchableOpacity,
 } from 'react-native';
+import React from 'react';
 import LinearGradient from 'react-native-linear-gradient';
 import { AuthStackParamList } from '../../navigation/AuthStack';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
@@ -24,7 +24,7 @@ const WalletStart = ({ navigation }: Props) => {
           <View style={styles.hero}>
             <View style={styles.logoCircle}>
               <MaterialCommunityIcons
-                name="shield-check"
+                name="wallet-outline"
                 size={64}
                 color="#53F2FF"
               />

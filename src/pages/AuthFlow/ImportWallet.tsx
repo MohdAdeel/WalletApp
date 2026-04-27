@@ -1,15 +1,15 @@
-import React, { useState } from 'react';
 import {
   View,
   Text,
   Platform,
   TextInput,
+  ScrollView,
   StyleSheet,
   SafeAreaView,
   KeyboardAvoidingView,
-  ScrollView,
 } from 'react-native';
 import { Wallet } from 'ethers';
+import React, { useState } from 'react';
 import { useAuth } from '../../Contexts/AuthContext';
 import LinearGradient from 'react-native-linear-gradient';
 import GradientButton from '../../components/GradientButton';
@@ -72,7 +72,7 @@ const ImportWallet = ({ navigation }: Props) => {
             <View style={styles.logoSection}>
               <View style={styles.logoCircle}>
                 <MaterialCommunityIcons
-                  name="shield-check"
+                  name="wallet-outline"
                   size={36}
                   color="#53F2FF"
                 />

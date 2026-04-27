@@ -7,9 +7,9 @@
 
 import { StatusBar } from 'react-native';
 import { Colors } from './src/constants/color';
+import AppNavigator from './src/navigation/AppNavigator';
 import { AuthProvider } from './src/Contexts/AuthContext';
 import { WalletProvider } from './src/Contexts/WalletContext';
-import AppNavigator from './src/navigation/AppNavigator';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 

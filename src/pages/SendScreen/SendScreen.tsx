@@ -1,29 +1,29 @@
 import {
   View,
   Text,
+  Modal,
   Alert,
   Easing,
-  Modal,
+  Platform,
   Animated,
+  TextInput,
   Pressable,
   StatusBar,
   ScrollView,
   StyleSheet,
-  TextInput,
   SafeAreaView,
   ActivityIndicator,
   KeyboardAvoidingView,
-  Platform,
 } from 'react-native';
-import React, { useEffect, useMemo, useRef, useState } from 'react';
-import { Contract, Wallet, isAddress, parseEther, parseUnits } from 'ethers';
-import { useNavigation } from '@react-navigation/native';
 import { Colors } from '../../constants/color';
-import { MainStackParamList } from '../../navigation/MainStack';
 import { useAuth } from '../../Contexts/AuthContext';
 import { useWallet } from '../../Contexts/WalletContext';
+import { useNavigation } from '@react-navigation/native';
+import { MainStackParamList } from '../../navigation/MainStack';
 import { getDefaultProvider } from '../../lib/Ether/EtherConfig';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
+import { Contract, Wallet, isAddress, parseEther, parseUnits } from 'ethers';
 
 const QR_LINE_COUNT = 1;
 const ERC20_ABI = [

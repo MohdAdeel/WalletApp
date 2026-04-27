@@ -39,7 +39,7 @@ const GettingStarted = ({ navigation }: Props) => {
         <View style={styles.content}>
           <View style={styles.badge}>
             <MaterialCommunityIcons
-              name="shield-star"
+              name="wallet-outline"
               size={56}
               color="#63FFFF"
             />
